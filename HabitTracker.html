@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="HabitTracker.html"> 🏠 Habit Tracker</a></li>
+            <li><a href="tasks.html">📋 Tasks Done Table</a></li>
+            <li><a href="progress.html">📊 Progress Chart</a></li>
+            <li><a href="tips.html">💡 Productive Tips</a></li>
+        </ul>
+    </nav>
+
+    <h1>Habit Tracker</h1>
+
+    <main>
+        <!-- Habit Input Form -->
+        <form id="habit-form" action="" method="post">
+            <input type="text" id="habit-name" placeholder="Enter Habit Name" required>
+            <button type="submit">Add Habit</button>
+        </form>
+
+        <!-- Habit List Table -->
+        <section id="habit-container">
+            <div id="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Habit</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                            <th>Sun</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="habit-list"></tbody>
+                </table>
+                <button id="save-progress-btn">Save Progress</button>
+            </div>
+        </section>
+
+        <!-- Tasks Done Table -->
+        <h2>Tasks Done</h2>
+        <table id="tasks-done-table">
+            <thead>
+                <tr>
+                    <th>Habit</th>
+                    <th>Completed Days</th>
+                </tr>
+            </thead>
+            <tbody id="tasks-done-body"></tbody>
+        </table>
+
+        <!-- Progress Chart -->
+        <h2>Track Progress</h2>
+        <canvas id="progress-chart" width="400" height="400"></canvas>
+    </main>
+
+    <!-- Link to external JavaScript -->
+    <script src="Script.js"></script>
+
+</body>
+</html>
