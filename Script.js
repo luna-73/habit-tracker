@@ -10,8 +10,7 @@ loadHabits();
 habitForm.addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent page reload
     
-    const habitName = habitNameInput.value.trim(); // Get the habit name from input
-    
+    const habitName = habitNameInput.value.trim(); 
     if (habitName !== "") {
         // Create a new row in the table
         const newRow = document.createElement('tr');
@@ -27,16 +26,14 @@ habitForm.addEventListener('submit', function(event) {
             <td><button class="remove-btn">Remove</button></td>
         `;
         
-        // Append the new row to the habit list
-        habitList.appendChild(newRow);
         
-        // Clear the input field after adding habit
+        habitList.appendChild(newRow);
         habitNameInput.value = "";
         
-        // Add event listener to remove button
+        
         newRow.querySelector('.remove-btn').addEventListener('click', function() {
-            newRow.remove(); // Remove the habit row from the table
-            saveHabits(); // Save updated habits after removal
+            newRow.remove(); 
+            saveHabits(); 
         });
 
         // Save habits to localStorage
@@ -44,7 +41,7 @@ habitForm.addEventListener('submit', function(event) {
     }
 });
 
-// Save the habit list and checkbox statuses to localStorage
+e
 function saveHabits() {
     const habits = [];
     const rows = document.querySelectorAll('#habit-list tr');
@@ -170,7 +167,7 @@ saveBtn.addEventListener('click', function () {
         });
     
 
-    // Also update localStorage again to make sure it’s saved
+    //updates storage
     saveHabits();
 });
 
