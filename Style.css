@@ -95,11 +95,12 @@ form#habit-form button:hover {
 
 /* Habit List Table */
 #habit-container {
-    background-color: rgb(246, 247, 190);
+    background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
+    
 }
 
 #habit-container table {
@@ -165,8 +166,14 @@ form#habit-form button:hover {
 
 /* Progress Chart */
 #progress-chart {
-    margin-top: 30px;
-}
+    max-width: 400px; 
+    max-height: 400px;
+    width: 100%;
+    height: auto;
+    margin: 20px auto; 
+    display: block;
+  }
+  
 
 /* Media Queries for Responsiveness */
 @media screen and (max-width: 768px) {
