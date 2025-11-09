@@ -8,21 +8,27 @@
 </head>
 <body>
 
-  <nav class="navbar">
+  <nav class="navbar" aria-label="Main navigation">
     <ul>
       <li><a href="HabitTracker.html">🏠 Habit Tracker</a></li>
       <li><a href="tasks.html">📋 Tasks Done Table</a></li>
       <li><a href="progress.html">📊 Progress Chart</a></li>
-      <li><a href="tips.html">💡 Productive Tips</a></li>
+      <li><a class="active" href="tips.html">💡 Productive Tips</a></li>
     </ul>
   </nav>
 
   <main>
     <h1>🧠 Boost Productivity</h1>
+    <p class="subtitle">Curated science-backed tips to help you stay focused & consistent.</p>
+
     <div class="tips-container">
-      <!-- Blog cards populated here -->
+      <p id="noTips" style="text-align:center; opacity:0.7;">Loading tips...</p>
     </div>
   </main>
+
+  <footer>
+    <p>Made with ❤️ to help you stay consistent.</p>
+  </footer>
 
   <script src="tips.js"></script>
 </body>
